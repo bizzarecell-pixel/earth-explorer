@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth | Our Beautiful Planet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Theme Toggle Button -->
+<button id="theme-toggle">🌙 Dark Mode</button>
+
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <span>EARTH</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                  <li><a href="#gallery" class="nav-link">Gallery</a></li>
+
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <section id="home" class="hero-section">
+        <div class="video-container">
+            <video id="earthVideo" autoplay muted loop playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-earth-rotating-in-space-1611-large.mp4" type="video/mp4">
+                <!-- Your browser does not support the video tag. -->
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <!-- <span class="title-line">Our Beautiful</span> -->
+                    <span class="title-line highlight">Planet Earth</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Explore the wonders of our home planet through breathtaking visuals and fascinating facts
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" id="exploreBtn">
+                        <i class="fas fa-rocket"></i>
+                        Explore More
+                    </button>
+                    <button class="btn-secondary" id="watchBtn">
+                        <i class="fas fa-play"></i>
+                        Watch Documentary
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Earth Stats -->
+            <div class="earth-stats">
+                <div class="stat-card">
+                    <i class="fas fa-water"></i>
+                    <div class="stat-number" data-target="71">0</div>
+                    <div class="stat-label">% Water</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-mountain"></i>
+                    <div class="stat-number" data-target="29">0</div>
+                    <div class="stat-label">% Land</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-temperature-high"></i>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">°C Avg Temp</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-astronaut"></i>
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Billion People</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Our Planet</h2>
+                <p class="section-subtitle">The only known planet to harbor life in the universe</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="earth-3d" id="earth3d">
+                        <div class="continents">🛰</div>
+                        <div class="atmosphere"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>The Blue Marble</h3>
+                    <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers.</p>
+                    <p>The remaining 29% of Earth's surface is land, consisting of continents and islands. Earth's surface layer is formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and earthquakes.</p>
+                    
+                    <div class="fun-facts">
+                        <div class="fact">
+                            <i class="fas fa-sun"></i>
+                            <span>Earth is 4.5 billion years old</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-wind"></i>
+                            <span>Atmosphere is 78% nitrogen, 21% oxygen</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-seedling"></i>
+                            <span>Home to 8.7 million species</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Earth's Unique Features</h2>
+                <p class="section-subtitle">What makes our planet truly special</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Life Support</h3>
+                    <p>Perfect distance from the Sun allows liquid water to exist, essential for all known life forms.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Protective Atmosphere</h3>
+                    <p>Ozone layer protects from harmful UV radiation, while magnetic field deflects solar winds.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Self-Regulating</h3>
+                    <p>Complex systems maintain stable conditions through carbon cycles and climate regulation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Water World</h3>
+                    <p>The only planet with liquid water on its surface, creating unique ecosystems and weather.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="gallery-grid">
+    <section id="gallery" class="gallery-section">
+    <div class="gallery-grid">
+        <!-- Gallery items here -->
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Whispering Timber Grove">
+        <div class="gallery-overlay">
+            <h4>Whispering Timber Grove</h4>
+            <p>Whispering Timber Grove is a tranquil forest pathway where sunlight filters through towering trees, inviting wanderers to explore its serene and timeless beauty.</p>
+
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/2127969/pexels-photo-2127969.jpeg" alt="Emerald Ridge Vista">
+        <div class="gallery-overlay">
+            <h4>Emerald Ridge Vista</h4>
+            <p>Emerald Ridge Vista is a breathtaking highland lookout where lush forests roll into distant peaks and the sky meets the horizon in a tapestry of color and light.</p>
+
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ocean">
+        <div class="gallery-overlay">
+            <h4>Pacific Ocean</h4>
+            <p>Largest body of water</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Northern Lights">
+        <div class="gallery-overlay">
+            <h4>Aurora Borealis</h4>
+            <p>Nature's light show</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/287229/pexels-photo-287229.jpeg" alt="Elysium Coast">
+        <div class="gallery-overlay">
+            <h4>Elysium Coast</h4>
+            <p>Crystal-blue waters meet peaceful horizons in a serene coastal escape.</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/105804/pexels-photo-105804.jpeg" alt="Sapphire Reef Point">
+        <div class="gallery-overlay">
+            <h4>Sapphire Reef Point</h4>
+            <p>Rugged rock formations touched by whispering tides and endless blue waters.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/35394964/pexels-photo-35394964.jpeg" alt="Sapphire Reef Point">
+        <div class="gallery-overlay">
+            <h2>Peaceful Horizons</h2>
+            <p>A serene natural landscape featuring calm water surrounded by lush greenery and rolling hills, capturing the peaceful and untouched beauty of Earth’s environment.</p>
+
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg" alt="Golden Dune Bay">
+        <div class="gallery-overlay">
+            <h4>Golden Dune Bay</h4>
+            <p>Golden Dune Bay is a stunning coastal vista where warm sunset hues blend with sweeping sandy dunes and gentle rolling waves, creating a timeless sea-side retreat.</p>
+
+        </div>
+    </div>
+        <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg" alt="Golden Dune Bay">
+        <div class="gallery-overlay">
+            <h4>“Where Nature Meets Human Design”</h4>
+            <p>A massive suspension bridge stretches gracefully over calm water, its tall towers and strong cables forming a striking geometric pattern against the clear sky. The scene feels peaceful yet powerful, highlighting the beauty of modern engineering and open landscapes.</p>
+
+
+        </div>
+    </div>
+        </div>
+</section>
+
+
+</div>
+    <!-- </section> -->
+
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-globe-americas"></i>
+                    <span>EARTH</span>
+                </div>
+                <p class="footer-text">
+                    "The Earth does not belong to us: we belong to the Earth." - Marlee Matlin
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Earth Explorer. All rights reserved® . | Made <i class="fas fa-heart"></i> for our planet</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+     <script>
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Check if a theme is saved in localStorage
+if(localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-theme');
+    toggleButton.textContent = '☀️ Light Mode';
+}
+
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-theme');
+    
+    if(body.classList.contains('dark-theme')) {
+        toggleButton.textContent = '☀️ Light Mode';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        toggleButton.textContent = '🌙 Dark Mode';
+        localStorage.setItem('theme', 'light');
+    }
+});
+</script>
+
+    <script src="app.js"></script>
+</body>
+</html>
